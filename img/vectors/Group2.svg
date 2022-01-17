@@ -1,0 +1,7 @@
+<svg width="88" height="17" viewBox="0 0 88 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="17" rx="4" fill="#FE5915"/>
+<rect x="36" width="16" height="17" rx="4" fill="white"/>
+<rect x="54" width="16" height="17" rx="4" fill="white"/>
+<rect x="72" width="16" height="17" rx="4" fill="white"/>
+<path d="M18 4C18 1.79086 19.7909 0 22 0H30C32.2091 0 34 1.79086 34 4V13C34 15.2091 32.2091 17 30 17H22C19.7909 17 18 15.2091 18 13V4Z" fill="white"/>
+</svg>
