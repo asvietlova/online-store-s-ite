@@ -1,0 +1,128 @@
+/*****************************************************************      Slider */
+
+.new-items-slider {
+  width: 100%;
+  padding: 40px 50px;
+  display: flex;
+  gap: 3%;
+}
+
+.slider-item {
+  padding: 1%;
+  width: 160px;
+  border: 2px solid #e4e7ee;
+  border-radius: 12px;
+  position: relative;
+  flex-grow: 1;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-items-slider-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.new-items-slider-name {
+  margin: 16px 0;
+  display: block;
+  color: #4b76ad;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.new-items-slider-price {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.new-items-slider-price .current-price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.new-items-slider-price .previous-price {
+  color: #fc5e1f;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.new-items-slider-button-buy {
+  padding: 8px 16px;
+  background-color: #fc5e1f;
+  color: #fff;
+  border: none;
+  border-bottom: 4px solid #c54818;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.cart-icon-white {
+  margin-right: 8px;
+  max-width: 100%;
+}
+
+.new-items-button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-items-button-row .new-items-slider-details {
+  font-size: 13px;
+  color: #4b76ad;
+  text-decoration: underline;
+}
+
+.new-items-slider-label {
+  top: -6px;
+  left: 12px;
+  position: absolute;
+}
+
+.new-items-slider-label-new {
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  top: 11px;
+  left: 3px;
+}
+
+.new-items-slider-label-like {
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.new-items-slider-label-percent {
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.slider-item:hover {
+  border: 2px solid #ff5e1e;
+}
+
+.new-items-slider-name:hover {
+  color: #ff5e1e;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.new-items-slider-button-buy:hover {
+  background-color: #4673ac;
+  border-bottom: 4px solid #385985;
+  cursor: pointer;
+}

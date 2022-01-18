@@ -1,0 +1,68 @@
+/**********************************************************************   How to work with us */
+
+.htwwu-section-bookmarks {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 18px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.htwwu-section-bookmarks-orange {
+  color: #fc5e1f;
+  text-decoration: underline dashed;
+  text-decoration-color: #fc5e1f;
+  background-color: #dbdee7;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.htwwu-section-graphics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 15px;
+  text-transform: uppercase;
+  gap: 17px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  flex-wrap: wrap;
+}
+
+.htwwu-section-graphics-img {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  max-width: 250px;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.htwwu-section-graphics-img img {
+  max-width: 48px;
+  max-height: 35px;
+}
+
+.just-some-text {
+  font-weight: 300;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 150px;
+  margin-bottom: 90px;
+}
+
+.just-some-text a {
+  text-decoration-line: underline;
+  color: #fe5815;
+}

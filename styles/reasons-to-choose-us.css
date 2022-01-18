@@ -1,0 +1,110 @@
+/**********************************************************************   5 reasons */
+
+.five-reasons-red-block {
+  max-width: 543px;
+  border: 3px solid #f7c7c7;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.five-reasons-red-block-div {
+  min-height: 79px;
+  background: #ca0b13;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.five-reasons-red-block p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 79px;
+  padding-top: 20px;
+}
+
+.five-reasons-red-block img {
+  position: relative;
+  top: -49px;
+  left: 33px;
+}
+
+.five-reasons-red-block span {
+  font-weight: 700;
+}
+
+.five-reasons-red-block ul {
+  list-style: none;
+}
+
+.five-reasons-red-block ul li::before {
+  content: "\2022";
+  color: #ca0b13;
+  font-weight: bold;
+  margin-left: 0em;
+}
+
+.five-reasons-red-block ul li {
+  margin-top: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.five-reasons-green-block {
+  max-width: 543px;
+  min-height: 403px;
+  border: 3px solid #a4d6b0;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.five-reasons-green-block-div {
+  height: 79px;
+  background: #16a332;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.five-reasons-green-block p {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 79px;
+  padding-top: 20px;
+}
+
+.five-reasons-green-block img {
+  position: relative;
+  top: -49px;
+  left: 33px;
+}
+
+.five-reasons-green-block span {
+  font-weight: 700;
+}
+
+.five-reasons-green-block ul {
+  list-style: none;
+}
+
+.five-reasons-green-block ul li::before {
+  content: "\2022";
+  color: #16a332;
+  font-weight: bold;
+  margin-left: 0em;
+}
+
+.five-reasons-green-block ul li {
+  margin-top: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.five-reasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5%;
+  gap: 1%;
+}

@@ -1,0 +1,220 @@
+/**************************************************************    Under Nav section*/
+
+.under-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.under-nav-bar .region {
+  color: black;
+  /* margin-right: 900px; */
+}
+
+.under-nav-bar a,
+.region a {
+  color: #6183b3;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.under-nav-bar-entrance a {
+  color: #5279b0;
+  text-decoration: underline;
+  text-decoration-color: #e1e5ee;
+  margin-left: 20px;
+}
+
+.label {
+  padding-top: 10px;
+}
+
+.ho-my-ru-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ho-ru-label {
+  font-size: 46px;
+  font-weight: 200;
+}
+
+.my-label {
+  font-size: 46px;
+  font-weight: 400;
+  color: #fe6d34;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-label-img {
+  position: relative;
+  text-align: center;
+}
+
+.under-label {
+  color: #8f9092;
+  font-size: 11px;
+}
+
+.back-call {
+  position: relative;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.back-call-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #6183b3;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  line-height: 1.5;
+}
+
+.contacts-first-tel-number {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.contacts-working-hours,
+.contacts-second-tel-number,
+.contacts-email {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contacts-second-tel-number img {
+  margin-right: 3px;
+}
+
+.contacts-email {
+  color: #557cb3;
+  text-decoration: underline solid;
+  text-decoration-color: #d2dcea;
+}
+
+.contacts-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.voip-solutions-second-element {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff5817;
+}
+
+.voip-solutions-third-element {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.voip-solutions-first-element {
+  display: flex;
+  gap: 7px;
+}
+
+.search-box {
+  height: 29px;
+  width: 234px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  background-color: #eff0f4;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-box button {
+  position: relative;
+  top: -93%;
+  left: 172px;
+  background-color: #ff5716;
+  border-radius: 3px;
+  height: 86%;
+  width: 60px;
+  z-index: 2;
+  color: #fff;
+}
+
+.search-box button:hover {
+  background-color: #5279b0;
+  cursor: pointer;
+}
+
+.basket-conteiner {
+  width: 202px;
+  height: 55px;
+  background-color: #e2e5ec;
+  border-radius: 12px;
+}
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+.basket p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.basket-amount {
+  color: #5279b0;
+  text-decoration: underline solid;
+}
+
+.basket div {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bascket-icon {
+  position: relative;
+  top: -52%;
+  left: 8%;
+}
+
+.favorites,
+.refresh {
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: underline dashed;
+  text-decoration-color: #6b8dbb;
+}
+
+.favorites span,
+.refresh span {
+  color: #5279b0;
+}
+
+.favorites-and-refresh {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

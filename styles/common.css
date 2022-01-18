@@ -1,0 +1,345 @@
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-o-viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@import url(navigation.css);
+
+@import url(under-nav-section.css);
+
+@import url(news.css);
+
+@import url(new-items.css);
+
+@import url(promotion.css);
+
+@import url(strength.css);
+
+@import url(reasons-to-choose-us.css);
+
+@import url(company-in-numbers.css);
+
+@import url(work-with-us.css);
+
+@import url(footer.css);
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.main-content {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* ***************************************************************         */
+
+.group-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group-header hr {
+  border: 1px solid #edeef2;
+  border-radius: 2px;
+  min-width: 50px;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.group-header a {
+  font-size: 16px;
+  text-decoration-line: underline;
+  color: #4b76ad;
+}
+
+.arrows-right-left img {
+  border: 2px solid #e4e7ee;
+  border-radius: 50%;
+}
+
+.arrows-right-left img:hover {
+  border-color: #ff9800;
+}
+
+/**************************************************************              *********/
+
+.group-header-second {
+  margin: 40px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group-header-second hr {
+  border: 1px solid #edeef2;
+  border-radius: 2px;
+  width: 60%;
+}
+
+/************************************************************************    Buy now*/
+
+.sales-leaders-item a {
+  text-align: center;
+  text-decoration-line: underline;
+  color: #4b76ad;
+}
+
+.sales-leaders-item {
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+  height: 237px;
+}
+
+.sales-leaders {
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*********************************************************************     Brends*/
+
+.ours-brends {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* *********************************** */
+
+.nav-bar-mobile {
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  position: relative;
+  left: 50%;
+}
+
+.basket-and-search-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.skype-call img {
+  height: 15px;
+  width: 15px;
+}
+
+.skype-call a {
+  color: #000000;
+}
+
+/* Дизайн на 1440px - экран 1440px и больше 
+  Дизайн на 980px - экран 980px - 1440px 
+  Дизайн на 750px - экран 750px - 980px 
+  Дизайн на 320px - экран до 750px */
+
+@media screen and (min-width: 1440px) {
+  .invisble-desctop {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .promotion-slider {
+    padding-left: 72px;
+  }
+  .invisble-desctop-tablet-bigmobile {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1439px) {
+  .visible-desctop {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .main-content {
+    max-width: 97%;
+    margin: 0 auto;
+  }
+  .invisble-desctop-tablet-bigmobile {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 979px) {
+  .visible-desctop {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .main-content {
+    max-width: 97%;
+    margin: 0 auto;
+  }
+  .visible-desktop-tablet {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .invisble-desctop-tablet-bigmobile {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .news-slider-first-line {
+    font-size: 20px;
+  }
+  .news-slider-second-line {
+    font-size: 20px;
+  }
+  .news-slider-third-line {
+    font-size: 13px;
+  }
+  .news-slider ul li {
+    font-size: 13px;
+  }
+  .htwwu-section-graphics-img {
+    flex-direction: column;
+    align-items: center;
+    max-width: 10px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .visible-desctop {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+    /* position: absolute; */
+  }
+  .news {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .main-content {
+    max-width: 97%;
+    margin: 0 auto;
+  }
+  .visible-desktop-tablet {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  .visible-desktop-tablet-big-mobile {
+    /* visibility: hidden; */
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  .footer-second-section-text {
+    justify-content: center;
+  }
+  .new-items-slider {
+    justify-content: center;
+  }
+  .htwwu-section-graphics-img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-label {
+    font-size: 9px;
+  }
+  .footer-ho-ru-label {
+    font-size: 20px;
+  }
+  .footer-my-label {
+    font-size: 20px;
+    /* padding-left: 8px;
+      padding-right: 8px;
+      
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+  }
+  .footer-my-label-img img {
+    width: 39px;
+    height: 24px;
+  }
+  .footer-under-label {
+    font-size: 7px;
+  }
+  .footer .contacts-first-tel-number {
+    font-size: 15px;
+  }
+  .footer-nav-bar-mobile ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+  }
+  .second-section {
+    flex-wrap: wrap;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contacts-conteiner {
+    order: 3;
+    width: 100%;
+  }
+  .basket-and-search-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .htwwu-section-bookmarks {
+    font-size: 13px;
+  }
+}

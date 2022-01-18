@@ -1,0 +1,53 @@
+/**********************************************************************   Strength*/
+
+.ours-strength {
+  width: 100%;
+  height: 278px;
+  background: #e4e5ea;
+  border-radius: 12px;
+  padding-top: 29px;
+}
+
+.ours-strength-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 28px;
+}
+
+.ours-strength hr {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  width: 70%;
+}
+
+.ours-strength-item figcaption {
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.ours-strength-items figure {
+  width: 210px;
+  height: 151px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ours-strength-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ours-strength-items img {
+  margin-top: 32px;
+  margin-left: 50px;
+  width: 105px;
+  height: 105px;
+}

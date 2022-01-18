@@ -1,0 +1,76 @@
+/**********************************************************************   Company in numbers */
+
+.company-indicators-years-number,
+.company-indicators-specialists-number,
+.company-indicators-product-number,
+.company-indicators-partners-number,
+.company-indicators-shipment-number,
+.company-indicators-number-one-number {
+  width: 153px;
+  height: 153px;
+  border: 2px solid #dfe2eb;
+  border-radius: 50%;
+  font-weight: 700;
+  text-align: center;
+}
+
+.company-indicators-years-number {
+  font-size: 81px;
+  color: #fe5815;
+  padding-top: 2%;
+}
+
+.company-indicators-specialists-number {
+  font-size: 54px;
+  color: #374a59;
+  padding-top: 3%;
+}
+
+.company-indicators-product-number {
+  font-size: 32px;
+  color: #fe5815;
+  padding-top: 2%;
+}
+
+.company-indicators-partners-number {
+  font-size: 81px;
+  color: #374a59;
+  padding-top: 2%;
+}
+
+.company-indicators-shipment-number {
+  font-size: 81px;
+  color: #fe5815;
+  padding-top: 2%;
+}
+
+.company-indicators-number-one-number {
+  font-size: 79px;
+  color: #374a59;
+  padding-top: 2%;
+}
+
+.company-indicators-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.company-indicators-years-text,
+.company-indicators-specialists-text,
+.company-indicators-product-text,
+.company-indicators-partners-text,
+.company-indicators-shipment-text,
+.company-indicators-number-one-text {
+  width: 192px;
+  margin-top: 15px;
+  margin-left: 35px;
+}
+
+.company-indicators-text {
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
