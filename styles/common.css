@@ -33,6 +33,8 @@
 
 @import url(footer.css);
 
+@import url(drop-down-list.css);
+
 * {
   border: 0;
   margin: 0;
@@ -283,6 +285,8 @@ body {
   .footer-second-section-text {
     justify-content: center;
   }
+  .recommended-items-slider,
+  .sale-items-slider,
   .new-items-slider {
     justify-content: center;
   }
