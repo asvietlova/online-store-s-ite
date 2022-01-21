@@ -85,7 +85,8 @@ const TOP_MENU = {
     services: {
         order: 6,
         title: "Услуги",
-        submenu: [{
+        submenu: [
+            {
                 order: 1,
                 title: "Настройка VoIP оборудования",
                 url: "voip_equipment.html",

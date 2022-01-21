@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="styles/common.css" />
     <script type="text/javascript" src="scripts/config.js"></script>
     <script type="text/javascript" src="scripts/index.js" defer></script>
+    <script type="text/javascript" src="scripts/menu.js" defer></script>
+    <script type="text/javascript" src="scripts/basket.js" defer></script>
   </head>
 
   <body>
     <nav class="nav-container">
       <ul class="visible-desctop">
-        <li>
+        <!-- <li>
           <a class="visible-desctop" href="#">Каталог </a
           ><a class="visible-desctop" href="#"
             ><img src="img/vectors/Vector1.svg" alt="picture"
@@ -51,34 +53,33 @@
         </li>
         <li>
           <a class="visible-desctop" href="#">Контакты</a>
-        </li>
+        </li> -->
       </ul>
       <div class="invisble-desctop nav-bar-mobile">
         <img src="img/ic_action_menu.png" alt="" />
         <p>Меню</p>
       </div>
     </nav>
-    <div class="file-menu-catalog visible-desctop">
-      <ul>
-        <li class="file-menu-catalog-item">
-          <a class="visible-desctop" href="#">hfh</a>
+    <!-- <ul class="submenu visible-desctop>
+        <li class="submenu-item">
+          <a class="visible-desctop submenu-item-a" href="#">hfh</a>
         </li>
-        <li class="file-menu-catalog-item">
-          <a class="visible-desctop" href="#">fjfj</a>
+        <li class="submenu-item">
+          <a class="visible-desctop submenu-item-a" href="#">fjfj</a>
         </li>
-        <li class="file-menu-catalog-item">
-          <a class="visible-desctop" href="#">fjfgj</a>
+        <li class="submenu-item">
+          <a class="visible-desctop submenu-item-a" href="#">fjfgj</a>
         </li>
-        <li class="file-menu-catalog-item">
-          <a class="visible-desctop" href="#">fjfj</a>
+        <li class="submenu-item">
+          <a class="visible-desctop submenu-item-a" href="#">fjfj</a>
         </li>
       </ul>
-    </div>
+    
     <div class="menu-about-company visible-desctop">
       <div class="menu-about-company-item"><a href="#"></a></div>
       <div class="menu-about-company-item"><a href="#"></a></div>
       <div class="menu-about-company-item"><a href="#"></a></div>
-    </div>
+    </div> -->
     <div class="main-content">
       <div class="under-nav-bar">
         <p class="region">Ваш регион: <a href="#">Москва</a></p>
@@ -160,7 +161,8 @@
               <div class="basket">
                 <p>КОРЗИНА</p>
                 <div>
-                  <a class="basket-amount" href="#">4</a> / 4000
+                  <a class="basket-amount" href="#">4</a> /
+                  <span class="basket-total-sum"> 4000</span>
                   <span class="currency-symbol">р.</span>
                 </div>
               </div>
@@ -326,8 +328,16 @@
         <hr />
         <a class="visible-desctop" href="#">Все новинки</a>
         <div class="arrows-right-left invisble-desctop">
-          <img src="img/ic_action_keyboard_arrow_left.png" alt="" />
-          <img src="img/ic_action_keyboard_arrow_right.png" alt="" />
+          <img
+            class="button-slider-left"
+            src="img/ic_action_keyboard_arrow_left.png"
+            alt=""
+          />
+          <img
+            class="button-slider-right"
+            src="img/ic_action_keyboard_arrow_right.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -382,9 +392,9 @@
             src="img/phones/Layer779.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -416,9 +426,9 @@
             src="img/phones/Layer777.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -450,9 +460,9 @@
             src="img/phones/Layer778.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -486,8 +496,16 @@
         <hr />
         <a class="visible-desctop" href="#">Все рекомендации</a>
         <div class="arrows-right-left invisble-desctop">
-          <img src="img/ic_action_keyboard_arrow_left.png" alt="" />
-          <img src="img/ic_action_keyboard_arrow_right.png" alt="" />
+          <img
+            class="recomended-button-slider-left"
+            src="img/ic_action_keyboard_arrow_left.png"
+            alt=""
+          />
+          <img
+            class="recomended-button-slider-right"
+            src="img/ic_action_keyboard_arrow_right.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -512,9 +530,9 @@
             src="img/phones/Layer776.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -550,9 +568,9 @@
             src="img/phones/Layer779.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -588,9 +606,9 @@
             src="img/phones/Layer777.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -626,9 +644,9 @@
             src="img/phones/Layer778.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -661,8 +679,16 @@
         <hr />
         <a class="visible-desctop" href="#">Все товары</a>
         <div class="arrows-right-left invisble-desctop">
-          <img src="img/ic_action_keyboard_arrow_left.png" alt="" />
-          <img src="img/ic_action_keyboard_arrow_right.png" alt="" />
+          <img
+            class="sale-button-slider-left"
+            src="img/ic_action_keyboard_arrow_left.png"
+            alt=""
+          />
+          <img
+            class="sale-button-slider-right"
+            src="img/ic_action_keyboard_arrow_right.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -687,9 +713,9 @@
             src="img/phones/Layer776.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -725,9 +751,9 @@
             src="img/phones/Layer779.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -763,9 +789,9 @@
             src="img/phones/Layer777.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
@@ -801,9 +827,9 @@
             src="img/phones/Layer778.svg"
             alt="phone"
           />
-          <h4 class="new-items-slider-name">
+          <a href="#" class="new-items-slider-name">
             IP телефон Siemens Gigaset C530A IP
-          </h4>
+          </a>
           <div class="new-items-slider-price">
             Цена:
             <span class="current-price"> 12 300</span>
