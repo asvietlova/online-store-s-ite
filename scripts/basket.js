@@ -40,4 +40,3 @@ for (let elem of ButtonsBuyHTML) {
          updateBasket(Number(currentPrice.innerText));
     });
 }
-
