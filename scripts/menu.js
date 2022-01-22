@@ -1,4 +1,4 @@
-let navUlHTML = document.querySelector(".nav-container ul")
+let navUlHTML = document.querySelector(".nav-container-ul")
 
 let arrTopMenu = [];
 for (let propName in TOP_MENU) {
@@ -18,60 +18,28 @@ console.log(arrTopMenu);
 // let x = TOP_MENU.catalog.submenu;
 // console.log(x);
 
-//function getSubmenu(el.submenu) {
-    for (let el of arrTopMenu) {
-        if (el.hasOwnProperty('submenu')) {
-            console.log('true');
-            let sortedSubmenu = el.submenu.sort(compare);
-            console.log(sortedSubmenu);
+function getSubmenu(submenuList) {
+    let sortedSubmenu = submenuList.sort(compare);
 
-            let ul = document.createElement("ul");
-            let li = document.createElement("li");
-            let a = document.createElement("a");
+    let ul = document.createElement("ul");
+    ul.classList.add('visible-desctop', 'submenu');
 
-            a.innerText = sortedSubmenu.title;
-            if (sortedSubmenu.url != undefined && sortedSubmenu.url != "") {
-                a.href = sortedSubmenu.url;
-            } else {
-            a.href = "#";
-            }
+    for (let submenuItem of sortedSubmenu) {
+        let li = document.createElement("li");
+        li.classList.add('visible-desctop', 'submenu-item');
 
-            a.classList.add('visible-desctop', 'submenu-item-a');
-            li.appendChild(a);
-            li.classList.add('visible-desctop', 'submenu-item');
-            ul.appendChild(li);
-            ul.classList.add('visible-desctop', 'submenu');
-        } else {
-        console.log('false')
-        };
-    };
-// };
+        let a = document.createElement("a");
+        a.classList.add('visible-desctop', 'submenu-item-a');
 
-//пишу фунцию присоединения
-// function getSubmenu(submenu) {
-//     // sort submenu 
-//     let ul = document.createElement("ul");
-// NewItems.sort(function (a, b) {
-//     if (a.date < b.date) {
-//       return 1;
-//     }
-//     if (a.date > b.date) {
-//       return -1;
-//     }
-//         return 0;
-//   });
-//   console.log(NewItems);
-//     for (let subItem of submenu) {
-//        let li  document.createElement("li");
-//        li.title = ''
-//        div.append(li)
-//     }
+        a.innerText = submenuItem.title;
+        a.href = submenuItem.url !== "" ?  submenuItem.url   : "#";
 
-//     ul.class = "";
-//     // position absolute 
-//     // z-index = 1000;
-//     // invisible 
-// }
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+    return ul;
+}
+
 
 
 for (let elem of arrTopMenu) {
@@ -84,7 +52,7 @@ for (let elem of arrTopMenu) {
         a.href = "#";
     }
 
-    a.classList.add('visible-desctop');
+    a.classList.add('visible-desctop', 'nav-container-ul-a');
     li.appendChild(a);
     
     
@@ -94,14 +62,37 @@ for (let elem of arrTopMenu) {
         img.classList.add('visible-desctop');
         li.append(img);
 
-//       когда навожу становится видимым mouseover/mouseout,
-//  let submenu = getSubmenu(elem.submenu);
-// // dropdown 
-//         li.hover = (event) {
-//             submenu.visible 
-//             submenu.x y = evet.x y
+        let sybmenuHTML = getSubmenu(elem.submenu);
+        li.append(sybmenuHTML);
+
+        sybmenuHTML.addEventListener("mouseover", function(event) {
+          //  console.log(event);
+         //  console.log(li);
+            this.style.display = "block";
+            event.stopPropagation();
+        });
+        sybmenuHTML.addEventListener("mouseout", function(event) {
+            this.style.display = "none";
+            event.stopPropagation();
+        });
+
+        li.addEventListener("mouseover", function(event) {
+          //  console.log(event);
+         //  console.log(li);
+
+            sybmenuHTML.style.top = event.clientY + "px";
+            sybmenuHTML.style.left = event.clientX - 150 + "px";
+            sybmenuHTML.style.display = "block";
+            event.stopPropagation();
+        });
+        li.addEventListener("mouseout", function(event) {
+            sybmenuHTML.style.display = "none";
+            event.stopPropagation();
+        });
+
+
         };
-    li.classList.add('visible-desctop');
+    li.classList.add('visible-desctop', 'nav-container-ul-li');
     navUlHTML.append(li);
     };
 

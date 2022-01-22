@@ -5,7 +5,7 @@
   height: 40px;
 }
 
-.nav-container ul {
+.nav-container-ul {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -16,13 +16,13 @@
   margin: 0 auto;
 }
 
-.nav-container ul li {
+.nav-container-ul-li {
   display: inline;
   color: #fff;
   font-size: 13px;
 }
 
-.nav-container a {
+.nav-container-ul-a {
   color: white;
   font-size: 13px;
 }
